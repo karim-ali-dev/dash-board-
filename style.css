@@ -1,0 +1,230 @@
+ 
+ 
+ *{
+    
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'poppins', sans-serif ;
+    
+
+}
+
+body{
+    background-color: #111320f3;
+    display: flex;
+}
+.img-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow:hidden;
+    border:3px solid red;
+    flex-shrink: 0;
+    
+}
+.img-box img{
+    width: 100%;
+}
+.profile{
+    display:flex;
+    align-items:center ;
+    gap: 50px;
+}
+.profile h2{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.menu{
+    background-color: #0a1012;
+    width: 70px;
+    height: 100vh;/*الارتفاع بطول الصفحة */
+    padding: 20px;/*تحريكها بمقدار*/
+    overflow: hidden;
+    
+
+}
+.menu:hover{
+    width: 260px;
+}
+
+ul{
+    list-style: none;/*اخفاء النقط القائمة*/
+    position: relative;
+    height: 95%;
+}
+ul li a {
+    display: block;/* 
+    تعيين display: block; يجعل العنصر يظهر ككتلة مستقلة تمتد على طول السطر بأكمله وتأخذ عرضًا كاملاً.
+    هذا يعني أن العنصر سيكون في خط جديد ولا يسمح بعرض أي عناصر أخرى في نفس السطر بجانبه.
+ */
+      text-decoration: none;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 40px;/*تباعد*/
+      transition: .5s;/*تاخير نصف ثانيى */
+}
+ul li a:hover, .active, .data-info .box:hover, td:hover{
+    background-color: #424246;
+}
+.log-out{
+    position: absolute;/*log-outاسفل المنيو */
+    bottom: 0;
+    width: 100%;
+}
+.log-out a{
+    background-color: rgb(216, 17, 17);
+}
+ul li a i{
+    font-size: 30px;
+
+}
+.content{
+   margin: 10px;
+    width: 100%;
+}
+.title-info{
+    background-color: rgb(11, 3, 236);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.data-info .box {
+    background-color: #123;
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 8px;
+    display:flex ;
+    align-items: center;
+    justify-content: space-around;
+   
+    
+  
+}
+ 
+
+
+.data-info .box i{
+    font-size: 40px;
+  
+}
+.data-info .box .data{
+    text-align: center;
+}
+.data-info .box span{
+    font-size: 32px;
+    
+    
+
+}
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 9px;
+}
+td,th{
+    background-color: rgb(62, 53, 42);
+    height: 40px;
+    border-radius: 10px;
+
+}
+th{
+    background-color:#0080ff ;
+}
+.price, .count{
+    padding: 6px;
+    border-radius: 100px;
+}
+.price{
+    background-color: #07d63b;
+}
+.count{
+    background-color: gold;
+    color: #0a1012;
+}
+
+
+
+
+footer {
+    background-color: #2d2e33;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius:  10px;
+}
+
+.footer-col {
+    width: 20%;
+    min-width: 200px; /* تحديد العرض الأدنى للعمود */
+    margin-bottom: 30px;
+}
+
+.footer-col h4 {
+    color: #f1bc0d;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-col ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #bdb6b6;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: white;
+}
+
+.links {
+    display: flex;
+}
+
+.links a {
+    color: white;
+    margin-right: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.links a:hover {
+    color: #b92a2a; /* تغيير لون النص عند التحويل */
+    background-color: #0783d6;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-col {
+        width: 50%;
+        text-align: center;
+    }
+}
